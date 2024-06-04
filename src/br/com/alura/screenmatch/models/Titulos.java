@@ -69,4 +69,11 @@ public class Titulos {
     public int exibirMediaNota(){
         return avaliacoes/totalDeAvaliacoes;
     }
+
+    @Override
+    public String toString() {
+        return getNome() + " (" + getAnoDeLancamento() + ")";
+    }
+
+    
 }

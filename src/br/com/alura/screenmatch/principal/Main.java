@@ -32,5 +32,10 @@ public class Main {
 
         FiltroRecomendacao filtro = new FiltroRecomendacao();
         filtro.filtrar(primeiro);
+
+        System.out.println(filme1);
+        System.out.println(serie1);
+        System.out.println(primeiro);
+        // precisa de mucança no construtor da classe Episodio
     }
 }

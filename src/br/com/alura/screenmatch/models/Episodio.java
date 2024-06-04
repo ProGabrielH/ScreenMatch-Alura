@@ -50,4 +50,11 @@ public class Episodio implements Classificavel {
         return 2;
     }
 
+    @Override
+    public String toString() {
+        return numero + "- " + nome + " (" + serie.getNome() + ")";
+    }
+
+    
+
 }
