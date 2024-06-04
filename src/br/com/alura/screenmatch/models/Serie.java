@@ -9,6 +9,11 @@ public class Serie extends Titulos implements Classificavel{
     private boolean ativa;
     private int minutosPorEpisodio;
 
+    public Serie(String nome, int anoDeLancamento){
+        this.setNome(nome);
+        this.setAnoDeLancamento(anoDeLancamento);
+    }
+
     public int getClassificacao(){
         return exibirMediaNota()/2;
     }

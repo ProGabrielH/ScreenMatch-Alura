@@ -8,8 +8,8 @@ import br.com.alura.screenmatch.models.Serie;
 
 public class Main {
     public static void main(String[] args) {
-        Filme filme1 = new Filme();
-        Serie serie1 = new Serie();
+        Filme filme1 = new Filme("Django Livre", 2012);
+        Serie serie1 = new Serie("Breaking Bad", 2012);
 
         //filme1.nome = "Django: Unchained";
         //filme1.avaliacoes = 100;
@@ -17,12 +17,12 @@ public class Main {
 
         //System.out.println(filme1.nome);
 
-        filme1.setNome("Django Livre");
-        filme1.setAnoDeLancamento(2012);
+        //filme1.setNome("Django Livre");
+        //filme1.setAnoDeLancamento(2012);
         filme1.setDuracaoEmMinutos(165);
 
-        serie1.setNome("Breaking Bad");
-        serie1.setAnoDeLancamento(2012);
+        //serie1.setNome("Breaking Bad");
+        //serie1.setAnoDeLancamento(2012);
         serie1.setMinutosPorEpisodio(45);
 
         Episodio primeiro = new Episodio();
