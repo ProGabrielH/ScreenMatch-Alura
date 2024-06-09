@@ -25,10 +25,10 @@ public class Main {
         //serie1.setAnoDeLancamento(2012);
         serie1.setMinutosPorEpisodio(45);
 
-        Episodio primeiro = new Episodio();
-        primeiro.setNumero(1);
-        primeiro.setSerie(serie1);
-        primeiro.setTotalVizualizacoes(1000);;
+        Episodio primeiro = new Episodio(1, "Piloto", serie1);
+        //primeiro.setNumero(1);
+        //primeiro.setSerie(serie1);
+        primeiro.setTotalVizualizacoes(1000);
 
         FiltroRecomendacao filtro = new FiltroRecomendacao();
         filtro.filtrar(primeiro);
