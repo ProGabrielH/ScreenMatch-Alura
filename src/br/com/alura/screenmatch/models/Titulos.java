@@ -10,28 +10,40 @@ public class Titulos {
     private int avaliacoes;
     private int totalDeAvaliacoes;
 
+    public Titulos (TitulosOmdb tituloOmdb){
+        this.nome = tituloOmdb.title();
+        this.anoDeLancamento = Integer.valueOf(tituloOmdb.year());
+        this.duracaoEmMinutos = Integer.valueOf(tituloOmdb.runtime().substring(0, (tituloOmdb.runtime()).length() - 4));
+    }
+
+    public Titulos (){}
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
     public void setDiretor(String diretor){
+
         this.diretor = diretor;
     }
 
     public void setAnoDeLancamento(int anoDeLancamento) {
+
         this.anoDeLancamento = anoDeLancamento;
     }
 
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
     public void setIncluidoNoPlano(boolean incluidoNoPlano) {
+
         this.incluidoNoPlano = incluidoNoPlano;
     }
 
     public String getNome() {
+
         return nome;
     }
 
@@ -40,7 +52,8 @@ public class Titulos {
     }
 
     public int getAnoDeLancamento() {
-        return anoDeLancamento;
+        return
+                anoDeLancamento;
     }
 
     public int getDuracaoEmMinutos() {
@@ -72,7 +85,7 @@ public class Titulos {
 
     @Override
     public String toString() {
-        return getNome() + " (" + getAnoDeLancamento() + ")";
+        return getNome() + " (" + getAnoDeLancamento() + ") - " + duracaoEmMinutos + " mins";
     }
 
     
